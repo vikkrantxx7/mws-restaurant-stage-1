@@ -28,7 +28,7 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 
 ## Authors
 
-* [Vikrant Sharma](https://github.com/vikkrantxx7) - JavaScript implementation.
+* [Vikrant Sharma](https://github.com/vikkrantxx7) - Added accessibility, responsiveness, offline functionality.
 * [Udacity Team](https://github.com/udacity) - Base Code
 
 
