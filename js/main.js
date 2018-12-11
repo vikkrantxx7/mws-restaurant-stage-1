@@ -187,7 +187,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  more.setAttribute("tabindex", "3");
+  more.setAttribute("tabindex", "0");
   li.append(more)
 
   return li
@@ -206,7 +206,9 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     }
     self.markers.push(marker);
   });
-
+  document.querySelectorAll('#map img').forEach(item => {item.setAttribute('tabIndex','-1')});
+  document.querySelectorAll('#map a').forEach(item => {item.setAttribute('tabIndex','-1')});
+  document.querySelector('#map').setAttribute('tabIndex','-1');
 } 
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
